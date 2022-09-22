@@ -46,7 +46,7 @@ h1, h2, h3, p {
   margin: 0;
 }
 .header__main {
-  background-image: url('/img/main.png');
+  background-image: url('../img/main.png');
 }
 .header {
   padding-top: 25px;
@@ -120,7 +120,7 @@ h1, h2, h3, p {
 }
 
 .slider {
-  background: url(/img/slidermain.png);
+  background: url('../img/slidermain.png');
   min-height: 610px;
   display: flex;
   justify-content: center;
@@ -200,7 +200,7 @@ h1, h2, h3, p {
 
 
 .congrats {
-  background: url(/img/congrats.png);
+  background: url('../img/congrats.png');
   padding-bottom: 30px;
   min-height: 610px;
   display: flex;
@@ -257,7 +257,7 @@ h1, h2, h3, p {
 
 
 .section__player {
-  background-image: url('/img/sectionpl.png');
+  background-image: url('../img/sectionpl.png');
   padding-top: 50px;
   padding-bottom: 50px;
   text-align: center;
@@ -455,7 +455,7 @@ i.fa-step-backward{
 }
 
 .cute {
-  background-image: url('/img/cute.png');
+  background-image: url('../img/cute.png');
   padding-top: 20px;
   padding-bottom: 20px;
 }
