@@ -1,0 +1,770 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*:before {
+  box-sizing: inherit;
+}
+body {
+  min-width: 320px;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  text-shadow: 0 0 5px grey,
+            0 0 25px grey,
+            0 0 50px grey,
+            0 0 100px grey;
+  background: #0c0207;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+}
+
+button {
+  cursor: pointer;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+.header__main {
+  background-image: url('/img/main.png');
+}
+.header {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-family: 'Philosopher';
+  font-size: 16px;
+  color: #fff;
+}
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  width: 80%;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logotype {
+  display: flex;
+  align-items: center;
+  max-width: 150px;
+  width: 100%;
+}
+.header__image {
+  max-width: 35px;
+  max-height: 35px;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(231deg) brightness(102%) contrast(101%);
+}
+.header__logotype-text {
+  margin-left: 10px;
+}
+.navigation__list {
+  display: flex;
+}
+.navigation__item {
+  margin-right: 50px;
+}
+.main {
+  min-height: 610px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.main__text {
+  position: relative;
+  color: #ffffff;
+  max-width: 450px;
+  margin: auto;
+}
+.main__title {
+  margin-bottom: 15px;
+  font-family: 'Merriweather';
+}
+.down__arrow {
+  margin-top: 20px;
+  max-width: 45px;
+  max-height: 45px;
+  cursor: pointer;
+}
+.main__paragraph {
+  font-family: 'Marck Script';
+  font-size: 20px;
+}
+.hide__text {
+  display: none;
+}
+.show__text {
+  display: block;
+}
+
+.slider {
+  background: url(/img/slidermain.png);
+  min-height: 610px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: #fff;
+  padding-bottom: 30px;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  max-width: 250px;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  text-shadow: 0 0 5px grey,
+            0 0 25px grey,
+            0 0 50px grey,
+            0 0 100px grey;
+}
+.swiper-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+.swiper__image {
+  max-width: 180px;
+  max-height: 380px;
+}
+.swiper__image img {
+  width: 100%;
+  height: 100%;
+}
+.swiper-pagination-bullet-active {
+  color:#fff;
+}
+.pinterest {
+  width: 32px;
+  height: 32px;
+}
+.slider__footer-text {
+  font-family: 'Marck Script';
+  font-size: 24px;
+}
+.slider__text {
+  margin-top: 30px;
+  max-width: 650px;
+  font-size: 20px;
+}
+.slider__title {
+  font-family: 'Merriweather';
+}
+.swiper__button {
+  padding: 8px;
+  border-radius: 10px;
+}
+
+
+.congrats {
+  background: url(/img/congrats.png);
+  padding-bottom: 30px;
+  min-height: 610px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: #fff;
+}
+.congrats-slide {
+  border-radius: 10px;
+  background: linear-gradient(90deg, rgba(77,82,70,0.8718837876947654) 43%, rgba(240,240,240,1) 80%);
+  cursor: pointer;
+}
+.congrats .swiper {
+  margin-bottom: 0px;
+}
+.congrats__title {
+  font-family: 'Merriweather';
+  font-size: 30px;
+  margin-top: 50px;
+}
+.modal {
+  max-width: 350px;
+  padding: 20px 15px 30px 15px;
+  max-height: 600px;
+  background: #1F1D21;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  display: none;
+}
+.modal__image {
+  max-width: 90px;
+  max-height: 90px;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(231deg) brightness(102%) contrast(101%);
+  margin-bottom: 20px;
+}
+.modal__title {
+  font-family: 'Merriweather';
+  margin-bottom: 10px;
+}
+.modal__paragraph {
+  font-family: 'Marck Script';
+  font-size: 20px;
+}
+.modal__show {
+  display: block;
+}
+
+
+
+.section__player {
+  background-image: url('/img/sectionpl.png');
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  min-height: 100vh;
+}
+.player{
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.player__title {
+  font-family: 'Merriweather';
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+.player__paragraph {
+  font-family: 'Marck Script';
+  font-size: 26px;
+  color: #fff;
+}
+.wrapper{
+  border: 1px solid transparent;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.details{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.track-art{
+  margin: 25px;
+  height: 250px;
+  width: 250px;
+  border: 2px solid #fff;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  -moz-box-shadow: 0px 6px 5px #ccc;
+  -webkit-box-shadow:0px 6px 5px #ccc;
+  box-shadow: 0px 6px 5px #ccc;
+  -moz-border-radius:190px;
+  -webkit-border-radius:190px;
+  border-radius: 190px;
+}
+.now-playing{
+  font-size: 1rem;
+}
+.track-name{
+  font-size: 2.5rem;
+}
+.track-artist{
+  margin-top: 5px;
+  font-size: 1.5rem;
+}
+.player__buttons{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.active{
+  color: black;
+}
+.repeat-track,
+.random-track,
+.playpause-track,
+.prev-track,
+.next-track{
+  padding: 25px;
+  opacity: 0.8;
+  transition: opacity .2s;
+}
+.repeat-track:hover,
+.random-track:hover,
+.playpause-track:hover,
+.prev-track:hover,
+.next-track:hover{
+  opacity: 1.0;
+}
+.player__container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.seek_slider,
+.volume_slider{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 5px;
+  background: #fff;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+.seek_slider::-webkit-slider-thumb,
+.volume_slider::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: white;
+  border: 3px solid #fff;
+  cursor: pointer;
+  border-radius: 100%;
+}
+.seek_slider:hover,
+.volume_slider:hover{
+  opacity: 1.0;
+}
+.seek_slider{
+  width: 60%;
+}
+.volume_slider{
+  width: 30%;
+}
+.current-time,
+.total-duration{
+  padding: 10px;
+}
+i.fa-volume-down,
+i.fa-volume-up{
+  padding: 10px;
+}
+i,
+i.fa-play-circle,
+i.fa-pause-circle,
+i.fa-step-forward,
+i.fa-step-backward{
+  cursor: pointer;
+}
+.randomActive{
+  color: white;
+}
+.rotate{
+  animation: rotation 8s infinite linear;
+}
+@keyframes rotation{
+  from{
+      transform: rotate(0deg);
+  }
+  to{
+      transform: rotate(359deg);
+  }
+}
+.loader{
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader .stroke{
+  background: #f1f1f1;
+  height: 150%;
+  width: 10px;
+  border-radius: 50px;
+  margin: 0px 5px;
+  animation: animate 1.4s linear infinite;
+}
+@keyframes animate{
+  50%{
+      height: 20%;
+      background: grey;
+  }
+  100%{
+      height: 100%;
+  }
+}
+.stroke:nth-child(1){
+  animation-delay: 0s;
+}
+.stroke:nth-child(2){
+  animation-delay: 0.3s;
+}
+.stroke:nth-child(3){
+  animation-delay: 0.6s;
+}
+.stroke:nth-child(4){
+  animation-delay: 0.9s;
+}
+.stroke:nth-child(5){
+  animation-delay: 0.6s;
+}
+.stroke:nth-child(6){
+  animation-delay: 0.3s;
+}
+.stroke:nth-child(7){
+  animation-delay: 0s;
+}
+
+.cute {
+  background-image: url('/img/cute.png');
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.cute__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.cute__card {
+  margin-top: 20px;
+}
+.cute__image {
+  height: 300px;
+  width: 300px;
+}
+.pictures {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  background: black;
+  color: white;
+  text-align: center;
+}
+.pictures__container  {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.pictures__card {
+  margin-top: 20px;
+}
+.pictures__image {
+  height: 400px;
+  width: 300px;
+}
+.pictures__title {
+  font-family: 'Merriweather';
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+.pictures__text .pictures__paragraph {
+  font-family: 'Marck Script';
+  font-size: 26px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.pictures__paragraph {
+  font-family: 'Marck Script';
+  font-size: 26px;
+  color: #fff;
+}
+.kishlak {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  background-color: black;
+  border-top: 3px solid grey;
+}
+.kishlak__container {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.kishlak__show {
+  display: flex;
+}
+.kishlak__card {
+  margin-top: 20px;
+}
+.kishlak__image {
+  height: 350px;
+  width: 300px;
+}
+.kishlak__title {
+  font-family: 'Merriweather';
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+.kishlak__arrow {
+  max-width: 45px;
+  max-height: 45px;
+  cursor: pointer;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(231deg) brightness(102%) contrast(101%);
+}
+
+.heart__section {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: black;
+  border-top: 3px solid grey;
+  border-bottom: 3px solid grey;
+}
+.heart__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.heart {
+  color: white;
+  font-size: 50px;
+  animation: heartbeat 0.5s infinite alternate;
+  transform-origin: center;
+  margin-right: 50px;
+  margin-top: 20px;
+  text-shadow: 0 0 5px grey,
+            0 0 25px grey,
+            0 0 50px grey,
+            0 0 100px grey;
+}
+.heart__paragraph {
+  font-family: 'Marck Script';
+  font-size: 31px;
+  color: #fff;
+}
+
+@keyframes heartbeat {
+  to {
+      transform: scale(1.5);
+  }
+}
+#marco {
+  width: 1325px;
+  height: 500px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 16px;
+  margin-top: 2em;
+}
+
+#cielo {
+  border-radius: 16px;
+  width: 1325px;
+  height: 500px;
+  background: linear-gradient(to bottom, #5853 0%, grey 52%, #0c0207 100%);
+  position: absolute;
+  z-index: -30;
+  top: 1;
+  margin-top: 2em;
+}
+
+#edificios {
+  background: url('https://res.cloudinary.com/pastelitos/image/upload/v1610526533/eva/edificiosOne_fsg7nx.svg');
+  height: 500px;
+  width: 1325px;
+  z-index: -10;
+  top: 7410px;
+  background-repeat: repeat-x;
+  -webkit-animation: animar_edificios 120s linear infinite;
+  -ms-animation: animar_edificios 120s linear infinite;
+  -moz-animation: animar_edificios 120s linear infinite;
+  position: absolute;
+}
+
+/* Animacion edificios */
+
+@keyframes animar_edificios {
+  from {
+      background-position: 0 0;
+  }
+
+  to {
+      background-position: 100% 0;
+  }
+}
+
+@-webkit-keyframes animar_edificios {
+  from {
+      background-position: 0 0;
+  }
+
+  to {
+      background-position: 100% 0;
+  }
+}
+
+@-ms-keyframes animar_edificios {
+  from {
+      background-position: 0 0;
+  }
+
+  to {
+      background-position: 100% 0;
+  }
+}
+
+@-moz-keyframes animar_edificios {
+  from {
+      background-position: 0 0;
+  }
+
+  to {
+      background-position: 100% 0;
+  }
+}
+
+#luna {
+  width: 6em;
+  height: 6em;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -moz-box-shadow: 30px 10px 0 #F7F8E0;
+  -webkit-box-shadow: 30px 10px 0 #F7F8E0;
+  box-shadow: 30px 10px 0 #F7F8E0;
+  margin-top: 50px;
+  margin-left: 50%;
+  position: absolute;
+  z-index: -19;
+}
+
+#muro {
+  height: 23em;
+  width: 100%;
+  background: -moz-linear-gradient(top, #416663 0%, #0c0207 19%);
+  background: -webkit-linear-gradient(top, #416663 0%, #0c0207 19%);
+  background: linear-gradient(to bottom, #416663 0%, #0c0207 19%);
+  bottom: 0px;
+}
+
+#gato {
+  background: url('https://res.cloudinary.com/pastelitos/image/upload/v1610526571/eva/gatito_pushui.svg');
+  height: 297px;
+  width: 507.5px;
+  margin-top: 2em;
+  margin-left: 2em;
+  z-index: 10;
+  -webkit-animation: sprite-animation 1.2s steps(16, end) infinite;
+  -moz-animation: sprite-animation 1.2s steps(16, end) infinite;
+  -ms-animation: sprite-animation 1.2s steps(16, end) infinite;
+  animation: sprite-animation 1.2s steps(16, end) infinite;
+}
+
+@-webkit-keyframes sprite-animation {
+  from {
+      background-position: 0 0;
+  }
+
+  to {
+      background-position: -8120px 0;
+  }
+}
+
+@-ms-keyframes sprite-animation {
+  from {
+      background-position: 0 0;
+  }
+
+  to {
+      background-position: -8120px 0;
+  }
+}
+
+@-moz-keyframes sprite-animation {
+  from {
+      background-position: 0 0;
+  }
+
+  to {
+      background-position: -8120px 0;
+  }
+}
+
+@keyframes sprite-animation {
+  from {
+      background-position: 0 0;
+  }
+
+  to {
+      background-position: -8120px 0;
+  }
+}
+.cat {
+  background-color: #0c0207;
+  font-size: 20px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+.cat__title {
+  font-family: 'Merriweather';
+  font-size: 30px;
+  margin-top: 20px;
+  color: #fff;
+  text-align: center;
+}
+.marsil {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  border-top: 3px solid grey;
+}
+.marsil__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+.marsil__image {
+  height: 500px;
+  border-radius: 30px;
+}
+.marsil__paragraph {
+  font-family: 'Marck Script';
+  font-size: 40px;
+  color: #fff;
+  margin-bottom: 20px;
+}
