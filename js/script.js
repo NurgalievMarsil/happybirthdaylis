@@ -77,91 +77,91 @@ let now_playing = document.querySelector('.now-playing');
   
   const music_list = [
       {
-          img : '../img/disckoshar.png?raw=true',
+          img : './img/disckoshar.png?raw=true',
           name : 'Я диско шар',
           artist : 'Кишлак',
           music : 'music/diskoshar.mp3'
       },
       {
-          img : '../img/diskoteka.png?raw=true',
+          img : './img/diskoteka.png?raw=true',
           name : 'Дискотека 90-х',
           artist : 'Автостопом по фазе сна',
           music : 'music/discoteka.mp3'
       },
       {
-          img : '../img/orgazm.png?raw=true',
+          img : './img/orgazm.png?raw=true',
           name : 'Оргазм',
           artist : 'Автостопом по фазе сна',
           music : 'music/ograzm.mp3'
       },
       {
-          img : '../img/otbrosi.png?raw=true',
+          img : './img/otbrosi.png?raw=true',
           name : 'Вы все отбросы',
           artist : 'Кишлак',
           music : 'music/otbrosi.mp3'
       },
       {
-          img : '../img/slezi.png?raw=true',
+          img : './img/slezi.png?raw=true',
           name : 'Слёзы',
           artist : 'Кишлак',
           music : 'music/slezi.mp3'
       },
       {
-          img : '../img/urka.png?raw=true',
+          img : './img/urka.png?raw=true',
           name : 'Урка',
           artist : 'Кишлак',
           music : 'music/urka.mp3'
       },
       {
-          img : '../img/diskoteka.png?raw=true',
+          img : './img/diskoteka.png?raw=true',
           name : 'Собачий вальс',
           artist : 'Автостопом по фазе сна',
           music : 'music/vals.mp3'
       },
       {
-          img : '../img/opiaty.png?raw=true',
+          img : './img/opiaty.png?raw=true',
           name : 'Опиаты',
           artist : 'Автостопом по фазе сна',
           music : 'music/opiaty.mp3'
       },
       {
-          img : '../img/opiaty.png?raw=true',
+          img : './img/opiaty.png?raw=true',
           name : 'Порно',
           artist : 'Автостопом по фазе сна',
           music : 'music/porno.mp3'
       },
       {
-          img : '../img/laytovo.png?raw=true',
+          img : './img/laytovo.png?raw=true',
           name : 'Лайтово',
           artist : 'Автостопом по фазе сна',
           music : 'music/laytovo.mp3'
       },
       {
-          img : '../img/opiaty.png?raw=true',
+          img : './img/opiaty.png?raw=true',
           name : 'Я некрасивый',
           artist : 'Автостопом по фазе сна',
           music : 'music/nekrasivy.mp3'
       },
       {
-          img : '../img/opiaty.png?raw=true',
+          img : './img/opiaty.png?raw=true',
           name : 'Девочка',
           artist : 'Автостопом по фазе сна',
           music : 'music/devochka.mp3'
       },
       {
-          img : '../img/disckoshar.png?raw=true',
+          img : './img/disckoshar.png?raw=true',
           name : 'А у нас на районе',
           artist : 'Кишлак',
           music : 'music/rayon.mp3'
       },
       {
-          img : '../img/slezi.png?raw=true',
+          img : './img/slezi.png?raw=true',
           name : 'Самый лучший день',
           artist : 'Кишлак',
           music : 'music/den.mp3'
       },
       {
-          img : '../img/slezi.png?raw=true',
+          img : './img/slezi.png?raw=true',
           name : 'Бесит бумага',
           artist : 'Кишлак',
           music : 'music/besitbumaga.mp3'
