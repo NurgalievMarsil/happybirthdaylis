@@ -558,6 +558,8 @@ i.fa-step-backward{
   align-items: center;
   flex-wrap: wrap;
   text-align: center;
+  max-width: 1680px;
+  margin: auto;
 }
 .heart {
   color: white;
@@ -582,6 +584,9 @@ i.fa-step-backward{
       transform: scale(1.5);
   }
 }
+.cat {
+  position: relative;
+}
 #marco {
   width: 1325px;
   height: 500px;
@@ -597,8 +602,8 @@ i.fa-step-backward{
   height: 500px;
   background: linear-gradient(to bottom, #5853 0%, grey 52%, #0c0207 100%);
   position: absolute;
-  z-index: -30;
-  top: 1;
+  z-index: 1;
+  top: 20px;
   margin-top: 2em;
 }
 
@@ -606,8 +611,8 @@ i.fa-step-backward{
   background: url('https://res.cloudinary.com/pastelitos/image/upload/v1610526533/eva/edificiosOne_fsg7nx.svg');
   height: 500px;
   width: 1325px;
-  z-index: -10;
-  top: 7410px;
+  z-index: 1;
+  top: 160px;
   background-repeat: repeat-x;
   -webkit-animation: animar_edificios 120s linear infinite;
   -ms-animation: animar_edificios 120s linear infinite;
@@ -669,7 +674,7 @@ i.fa-step-backward{
   margin-top: 50px;
   margin-left: 50%;
   position: absolute;
-  z-index: -19;
+  z-index: 0;
 }
 
 #muro {
@@ -687,7 +692,8 @@ i.fa-step-backward{
   width: 507.5px;
   margin-top: 2em;
   margin-left: 2em;
-  z-index: 10;
+  z-index: 100;
+  position: relative;
   -webkit-animation: sprite-animation 1.2s steps(16, end) infinite;
   -moz-animation: sprite-animation 1.2s steps(16, end) infinite;
   -ms-animation: sprite-animation 1.2s steps(16, end) infinite;
@@ -767,4 +773,140 @@ i.fa-step-backward{
   font-size: 40px;
   color: #fff;
   margin-bottom: 20px;
+}
+.popup {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(105, 105, 105, 1);
+  cursor: pointer;
+  padding: 30px;
+  overflow: hidden;
+  display: none;
+}
+.popup__heart {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+}
+.popup__heart1 {
+  top: 120px;
+  left: 230px
+}
+.popup__heart2 {
+  top: 690px;
+  left: 230px
+}
+.popup__heart3 {
+  top: 120px;
+  left: 1400px
+}
+.popup__heart4 {
+  top: 690px;
+  left: 1400px
+}
+.popup__heart5 {
+  top: 0px;
+  left: 840px
+}
+.popup__heart6 {
+  top: 799px;
+  left: 840px
+}
+.popup__main {
+  position: relative;
+  max-width: 500px;
+  background-color: #000;
+  margin: auto;
+  color: #fff;
+  border-radius: 16px;
+  padding: 30px 60px 40px;
+  cursor: default;
+  text-align: center;
+  font-family: 'Merriweather';
+}
+
+.popup__title {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.popup__container {
+  font-family: 'Marck Script';
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.popup__close {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 22px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  outline: 1px solid transparent;
+  outline-offset: 3px;
+  transition: outline-color .15s ease-in-out;
+  border-radius: 3px;
+  padding: 0;
+  text-align: center;
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+.popup__close:focus-visible {
+  outline-color: green;
+}
+.call {
+  border-top: 3px solid grey;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+.call__container {
+  max-width: 500px;
+  margin: auto;
+  background: url(../img/callkishlak.jpg?raw=true);
+  color: #fff;
+  min-height: 810px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 10px;
+}
+.call__phone {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgb(155, 246, 18);
+  position: relative;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.call__phone-image {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 20px;
+  height: 20px;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(231deg) brightness(102%) contrast(101%);
+}
+.call__text {
+  margin-top: 20px;
+}
+.call__paragraph {
+  margin-top: 10px;
+  margin-bottom: 600px;
+}
+.call__phone-paragraph {
+  margin-top: -5px;
+  margin-bottom: 20px;
+}
+.call__photo {
+  max-width: 735px;
+  margin: auto;
+  margin-top: 40px;
+  display: none;
 }

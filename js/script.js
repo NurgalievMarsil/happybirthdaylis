@@ -1,4 +1,46 @@
-const mainFunc = () => {
+window.addEventListener('DOMContentLoaded', event => {
+const modalController = ({popup, btnClose, time = 300}) => {
+  const modalElem = document.querySelector(popup);
+  const bodyModal = document.querySelector('body');
+  bodyModal.style.overflow = 'hidden';
+  setTimeout(() => {
+    modalElem.style.cssText = `
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+  `;
+  }, time);
+
+  const closeModal = event => {
+    const target = event.target;
+
+    if (
+      target === modalElem ||
+      (btnClose && target.closest(btnClose)) ||
+      event.code === 'Escape'
+      ) {
+      
+      modalElem.style.opacity = 0;
+
+      setTimeout(() => {
+        modalElem.style.visibility = 'hidden';
+      }, time);
+
+      window.removeEventListener('keydown', closeModal);
+      bodyModal.style.overflow = 'auto';
+    }
+  };
+  modalElem.addEventListener('click', closeModal);
+};
+
+
+modalController({
+  popup: '.popup2',
+  btnClose: '.popup__close'
+});
+
+
+    const mainFunc = () => {
   const hideText = document.querySelector('.hide__text'),
   downArrow = document.querySelector('.down__arrow');
 downArrow.addEventListener('click', () => {
@@ -53,6 +95,18 @@ const congratsSlider = () => {
 };
 congratsSlider();
 
+
+const kishlakCont = document.querySelector('.kishlak__container'),
+  kishlakArrow = document.querySelector('.kishlak__arrow');
+kishlakArrow.addEventListener('click', () => {
+    kishlakCont.classList.toggle('kishlak__show')
+});
+const callPhone = document.querySelector('.call__phone'),
+    callPhoto = document.querySelector('.call__photo');
+callPhone.addEventListener('click', () => {
+    callPhoto.style.display = 'block';
+});
+});
 let now_playing = document.querySelector('.now-playing');
   let track_art = document.querySelector('.track-art');
   let track_name = document.querySelector('.track-name');
@@ -273,9 +327,3 @@ let now_playing = document.querySelector('.now-playing');
           total_duration.textContent = durationMinutes + ":" + durationSeconds;
       }
   }
-
-const kishlakCont = document.querySelector('.kishlak__container'),
-  kishlakArrow = document.querySelector('.kishlak__arrow');
-kishlakArrow.addEventListener('click', () => {
-    kishlakCont.classList.toggle('kishlak__show')
-});
