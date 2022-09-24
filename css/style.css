@@ -456,6 +456,7 @@ i.fa-step-backward{
 
 .cute {
   background: url(../img/cute.jpg?raw=true);
+  background-repeat: no-repeat;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -909,4 +910,21 @@ i.fa-step-backward{
   margin: auto;
   margin-top: 40px;
   display: none;
+}
+.call__image {
+  margin-top: 20px;
+}
+.timer {
+  padding-top: 35px;
+  padding-bottom: 20px;
+  border-top: 3px solid grey;
+  color: #fff;
+  text-align: center;
+}
+.timer__title {
+  font-family: 'Merriweather';
+  margin-bottom: 20px;
+}
+.timer__number {
+  font-size: 35px;
 }

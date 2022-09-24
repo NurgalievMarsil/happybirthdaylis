@@ -106,6 +106,58 @@ const callPhone = document.querySelector('.call__phone'),
 callPhone.addEventListener('click', () => {
     callPhoto.style.display = 'block';
 });
+function countTimer(deadline) {
+    const timerHours = document.querySelector('#timer-hours');
+    const timerMinutes = document.querySelector('#timer-minutes');
+    const timerSeconds = document.querySelector('#timer-seconds');
+    const timerDays = document.querySelector('#timer-days');
+    function getTimeRemaining() {
+      const dateStop = new Date(deadline).getTime();
+      const dateNow = new Date().getTime();
+      const timeRemaining = (dateStop - dateNow) / 1000;
+      const seconds = Math.floor(timeRemaining % 60);
+      const minutes = Math.floor((timeRemaining / 60) % 60);
+      const hours = Math.floor(timeRemaining / 60 / 60) % 24;
+      const day = Math.floor(timeRemaining / 60 / 60 / 24);
+      return {
+        timeRemaining,
+        hours,
+        minutes,
+        seconds,
+        day
+      };
+    }
+    function getZero(num) {
+      if (num > 0 && num < 10) {
+        return '0' + num;
+      } else {
+        return num;
+      }
+    }
+    function updateClock() {
+      const timer = getTimeRemaining();
+      if (timer.hours < 0 && timer.minutes < 0 && timer.seconds < 0) {
+        timerHours.textContent = '00';
+        timerMinutes.textContent = '00';
+        timerSeconds.textContent = '00';
+      } else {
+        timerHours.textContent = getZero(timer.hours);
+        timerMinutes.textContent = getZero(timer.minutes);
+        timerSeconds.textContent = getZero(timer.seconds);
+        timerDays.textContent = getZero(timer.day);
+      }
+
+      if (timer.timeRemaining > 0) {
+        setTimeout(updateClock, 1000);
+      } else {
+        clearTimeout(updateClock);
+      }
+    }
+    updateClock();
+  }
+
+  countTimer('25 sept 2023');
+
 });
 let now_playing = document.querySelector('.now-playing');
   let track_art = document.querySelector('.track-art');
@@ -327,3 +379,8 @@ let now_playing = document.querySelector('.now-playing');
           total_duration.textContent = durationMinutes + ":" + durationSeconds;
       }
   }
+
+
+
+
+  
